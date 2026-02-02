@@ -1,14 +1,36 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>Hallo</h1>
-    <p>mijn naam is</p>
-  </header>
+<article class="profile-card-example">
+      <header class="profile-card-example-header">
+        <h1>{{ person.name }}</h1>
 
-  <p>{{ person.name }}</p>
+        <p><em>Student Frontend design and development</em></p>
+      </header>
 
-  <footer></footer>
-</article>
+      <img
+        src="assets/Squad1I-Rowan.JPG"
+        alt="foto van Rowan van Laar"
+        width="800"
+        height="800"
+        class="profile-card-example-img"
+      />
+      <dl class="profile-card-example-dl">
+        <dt>Movies</dt>
+        <dd>The Dark Knight Rises</dd>
+
+        <dt>Gaming</dt>
+        <dd>Elden Ring</dd>
+
+        <dt>Anime</dt>
+        <dd>Jojo Bizzare Adventure</dd>
+      </dl>
+
+      <p>
+        Ik ben Rowan ik ben een true gaming nerd. <br />
+        En heb al anderhalf jaar ervaring met front end development.
+      </p>
+
+       <footer></footer>
+    </article>
 
 {% render 'partials/foot.liquid' %}
