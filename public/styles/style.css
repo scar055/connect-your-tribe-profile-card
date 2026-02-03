@@ -1,9 +1,15 @@
+@font-face {
+  font-family: electrolize;
+  src: url("../assets/fonts/Electrolize/Electrolize-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
 }
 
 html {
   background-color: black;
+  font-family: electrolize, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html:has(.profile-card-example) {
