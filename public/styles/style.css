@@ -21,7 +21,7 @@ body:has(.profile-card-example) {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: rgb(205, 198, 249);
+  color: rgb(209, 247, 255);
 }
 
 article.profile-card-example {
@@ -79,20 +79,23 @@ header.profile-card-example-header {
   padding: 5rem 0 3rem;
   text-align: center;
   background: rgb(255, 255, 255, 0.2);
-  color: #202592;
+  color: rgb(85, 234, 212);
 
   dt {
     margin-top: 0.25rem;
     padding-top: 0.25rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     font-weight: bold;
+
     &:nth-of-type(1) {
       grid-area: html-dt;
     }
+
     &:nth-of-type(2) {
       grid-area: css-dt;
       transform: translateY(1rem);
     }
+
     &:nth-of-type(3) {
       grid-area: js-dt;
     }
@@ -102,6 +105,7 @@ header.profile-card-example-header {
     margin: 0;
     padding-left: 0.3rem;
     transition: 0.25s 0.3s;
+
     &:nth-of-type(2) {
       transform: translateY(1rem);
     }
@@ -112,40 +116,12 @@ header.profile-card-example-header {
   margin: 0;
 }
 
-.profile-card-example > p {
+.profile-card-example>p {
   width: 100%;
   margin-top: 0;
   padding: 3rem 2rem;
   border-radius: 0 0 1rem 1rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.2);
-  color: #202592;
+  color: rgb(85, 234, 212);
 }
-
-/* Deze styles zijn van toepassing als je op de knop klikt */
-/* body.is-expanded {
-  font-size: 1.15em;
-}
-
-body.is-expanded .profile-card-example {
-  width: 60vw;
-  max-width: 60vw;
-}
-
-body.is-expanded .profile-card-example-button svg:first-of-type {
-  opacity: 0;
-  transition-delay: 0ms;
-}
-
-body.is-expanded .profile-card-example-button svg:nth-of-type(2) {
-  opacity: 1;
-  transition-delay: 0.25s;
-}
-
-body.is-expanded .profile-card-example-dl dd {
-  font-size: 1.75em;
-}
-
-body.is-expanded .profile-card-example-img {
-  width: 15em;
-} */
