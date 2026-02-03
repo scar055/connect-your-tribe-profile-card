@@ -21,7 +21,6 @@ body:has(.profile-card-example) {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: open sans;
   color: rgb(205, 198, 249);
 }
 
