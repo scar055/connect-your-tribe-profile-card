@@ -22,7 +22,23 @@ body:has(.profile-card-example) {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: rgb(209, 247, 255);
+  color: rgb(243, 230, 0);
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 article.profile-card-example {
@@ -30,12 +46,38 @@ article.profile-card-example {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   width: 50vw;
   max-width: 25em;
-  min-width: 20em;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 100%, 80% 100%, 20% 100%, 0% 80%, 0% 0%);
+  min-width: min(20em, 96%);
+  border-radius: 10px;
   background: rgb(136, 4, 37);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: conic-gradient(from var(--angle),
+        #00ff9f,
+        #00b8ff,
+        #001eff,
+        #00b8ff,
+        #00ff9f);
+    z-index: -2;
+    padding: 3px;
+    border-radius: inherit;
+
+    @media (prefers-reduced-motion: no-preference) {
+      animation: 3s spin linear infinite;
+    }
+  }
+
+  &::after {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+  }
 }
 
 header.profile-card-example-header {
