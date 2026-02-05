@@ -22,7 +22,7 @@ body:has(.profile-card-example) {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: rgb(243, 230, 0);
+  color: rgb(209, 247, 255);
 }
 
 @keyframes spin {
@@ -90,7 +90,7 @@ header.profile-card-example-header {
   /* Je kunt selectors nesten! */
   h1 {
     margin: 2rem 0 1rem;
-    color: rgb(243, 230, 0);
+    color: rgb(209, 247, 255);
   }
 }
 
