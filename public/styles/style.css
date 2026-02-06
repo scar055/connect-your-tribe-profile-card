@@ -50,8 +50,12 @@ article.profile-card-example {
   width: 50vw;
   max-width: 25em;
   min-width: min(20em, 96%);
-  border-radius: 10px;
+  border-radius: 0 5em 0 5em;
   background: rgb(136, 4, 37);
+
+  /* dit is nog expirimenteel dus werkt niet in safari en firefox */
+  corner-top-right-shape: bevel;
+  corner-bottom-left-shape: bevel;
 
   &::before,
   &::after {
@@ -68,6 +72,8 @@ article.profile-card-example {
     z-index: -2;
     padding: 3px;
     border-radius: inherit;
+    corner-top-right-shape: bevel;
+    corner-bottom-left-shape: bevel;
 
     @media (prefers-reduced-motion: no-preference) {
       animation: 3s spin linear infinite;
