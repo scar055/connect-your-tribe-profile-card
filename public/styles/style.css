@@ -72,6 +72,8 @@ article.profile-card-example {
     z-index: -2;
     padding: 3px;
     border-radius: inherit;
+
+    /* dit is nog expirimenteel dus werkt niet in safari en firefox */
     corner-top-right-shape: bevel;
     corner-bottom-left-shape: bevel;
 
@@ -165,5 +167,6 @@ header.profile-card-example-header {
   width: 100%;
   margin-top: 0;
   padding: 3rem 2rem;
+  padding-inline-start: 3rem;
   color: rgb(209, 247, 255);
 }
